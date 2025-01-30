@@ -22,7 +22,7 @@ export const SendMoney = () => {
         }
 
         try {
-            const response = await axios.post("http://localhost:3000/api/v1/account/transfer", {
+            const response = await axios.post("https://payment-app-c9n0.onrender.com/api/v1/account/transfer", {
                 to: id,
                 amount: transferAmount
             }, {
